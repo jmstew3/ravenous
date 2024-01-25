@@ -9,3 +9,5 @@ function Business() {
     this.rating = "4.5";
     this.reviewCount = "90";
 }
+
+export default Business;
