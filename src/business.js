@@ -1,11 +1,11 @@
 function Business() {
-    this.image = "";
-    this.name = "";
-    this.address = "";
-    this.city = "";
-    this.state = "";
-    this.zipcode = "";
-    this.category = "";
-    this.rating = "";
-    this.reviewCount = "";
+    this.image = "https://content.codecademy.com/programs/react/ravenous/pizza.jpg";
+    this.name = "MarginOtto Pizzeria";
+    this.address = "1010 Paddington Way";
+    this.city = "Flavortown";
+    this.state = "NY";
+    this.zipcode = "10101";
+    this.category = "Italian";
+    this.rating = "4.5";
+    this.reviewCount = "90";
 }
