@@ -1,11 +1,21 @@
 import React from 'react';
 
-const businessData = ['image', 'name', 'address', 'city', 'state', 'zipcode', 'category', 'rating', 'reviewCount'];
-const listItems = businessData.map(data => <li>{data}</li>);
+const business = {
+    imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
+    name: "MarginOtto Pizzeria",
+    address: "1010 Paddington Way",
+    city: "Flavortown",
+    state: "NY",
+    zipcode: "10101",
+    category: "Italian",
+    rating: 4.5,
+    reviewCount: 90
+};
 
 function Business() {
     return (
-        <li>{listItems}</li>
+        <h1>{business.name}</h1>
+        // <img src="{business.imageSrc}"/>
     );
 }
 
