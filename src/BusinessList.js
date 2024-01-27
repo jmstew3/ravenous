@@ -5,7 +5,14 @@ import Business from './Business';
 
 function BusinessList() {
     return (
-      <Business />
+      <div className="biz-box-container">
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+      </div>
      );
 }
 

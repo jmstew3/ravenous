@@ -6,7 +6,7 @@ const business = {
     address: "1010 Paddington Way",
     city: "Flavortown",
     state: "NY",
-    zipcode: "10101",
+    zipCode: "10101",
     category: "Italian",
     rating: 4.5,
     reviewCount: 90
@@ -14,8 +14,26 @@ const business = {
 
 function Business() {
     return (
-        <h1>{business.name}</h1>
-        // <img src="{business.imageSrc}"/>
+        <div className="biz-box-item">
+            <img src={business.imageSrc}/>
+            <div className="content-box">
+            <div className="headline">   
+                <h1>{business.name}</h1>
+            </div> 
+                <div className="content">
+                    <div className="content-left">
+                        <p>{business.address}</p>
+                        <p>{business.city}</p>
+                        <p>{business.state} {business.zipCode}</p>
+                    </div>
+                    <div className="content-right">
+                        <p class="highlight">{business.category}</p>
+                        <p class="highlight-small">{business.rating} stars</p>
+                        <p>{business.reviewCount} reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 

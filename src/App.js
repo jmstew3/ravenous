@@ -4,7 +4,7 @@ import BusinessList from './BusinessList.js'
 
 function App() {
   return (
-        <BusinessList />
+    <BusinessList />
   );
 }
 
