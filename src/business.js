@@ -14,7 +14,17 @@ const businessData = {
 
 function Business() {
     return (
-      
+        <div>
+            image={businessData.image}
+            name={businessData.name}
+            address={businessData.address}
+            city={businessData.city}
+            state={businessData.state}
+            zipcode={businessData.zipcode}
+            category={businessData.category}
+            rating={businessData.rating}
+            reviewCount={businessData.reviewCount}
+        </div>
     );
 }
 
