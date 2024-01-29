@@ -1,20 +1,20 @@
 
-  .biz-box-item {
+  .boxItem {
     display: flex;
     flex-direction: column;
     max-width: calc(33.33% - 80px);
   }
   
-  .biz-box-item h1 {
+  .boxItem h1 {
     font-size: 1.2rem;
     font-weight: 800;
   }
   
-  .biz-box-item p {
+  .boxItem p {
     font-size: 0.8rem;
   }
   
-  .content-box {
+  .contentBox{
     padding: 5px 0;
     margin-bottom: 15px;
   }
@@ -29,22 +29,22 @@
     margin: 2px 0;
   }
   
-  .content .content-left {
+  .content .contentLeft {
     text-align: start;
   }
   
-  .content .content-right {
+  .content .contentRight {
     text-align: end;
   }
   
-  .content-right .highlight {
+  .contentRight .highlight {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 1rem;
     color: var(--color-primary);
   }
   
-  .content-right .highlight-small {
+  .contentRight .highlightSmall {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 0.8rem;

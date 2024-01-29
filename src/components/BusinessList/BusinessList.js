@@ -1,10 +1,10 @@
 import React from 'react';
-import './BusinessList.css';
+import styles from './BusinessList.module.css';
 import Business from '../Business/Business';
 
 function BusinessList() {
     return (
-      <div className="biz-box-container">
+      <div className={styles.BusinessList}>
         <Business />
       </div>
      );

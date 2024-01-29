@@ -1,12 +1,9 @@
 import React from 'react';
-import './SearchBar.css';
+import styles from './SearchBar.css';
 
 function SearchBar() {
     const searchBar = (
         <header>
-        <div id="heroBanner">
-          <h1>ravenous</h1>
-        </div>
         <div className="sortContainer">
           <div className="sortItems">
             <div>

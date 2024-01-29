@@ -1,5 +1,5 @@
 import React from 'react';
-import './Business.css';
+import styles from './Business.module.css';
 
 const business = [
     {
@@ -73,21 +73,21 @@ const business = [
 function Business() {
     const businesses = business.map((business, index) =>
         (
-            <div key={index} className="biz-box-item">
+            <div key={index} className={styles.boxItem}>
                 <img src={business.imageSrc}/>
-                <div className="content-box">
-                    <div className="headline">   
+                <div className={styles.contentBox}>
+                    <div className={styles.headline}>   
                         <h1>{business.name}</h1>
                     </div> 
-                    <div className="content">
-                        <div className="content-left">
+                    <div className={styles.content}>
+                        <div className={styles.contentLeft}>
                             <p>{business.address}</p>
                             <p>{business.city}</p>
                             <p>{business.state} {business.zipCode}</p>
                         </div>
-                        <div className="content-right">
-                            <p className="highlight">{business.category}</p>
-                            <p className="highlight-small">{business.rating} stars</p>
+                        <div className={styles.contentRight}>
+                            <p className={styles.highlight}>{business.category}</p>
+                            <p className={styles.highlightSmall}>{business.rating} stars</p>
                             <p>{business.reviewCount} reviews</p>
                         </div>
                     </div>
