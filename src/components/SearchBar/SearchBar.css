@@ -10,21 +10,6 @@
     background-size: 100%;
   }
   
-  #heroBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primary);
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-  }
-  
-  #heroBanner h1 {
-    font-size: 2.0rem;
-    color: white;
-  }
-  
   .sortContainer {
     display: flex;
     flex-direction: column;
