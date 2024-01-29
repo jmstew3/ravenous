@@ -7,11 +7,6 @@ function BusinessList() {
     return (
       <div className="biz-box-container">
         <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
       </div>
      );
 }
