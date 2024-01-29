@@ -22,12 +22,8 @@ function App() {
             </div>
           </div>
           <div className="searchItems">
-            <form>
-              <input id="searchBox" type="business" placeholder="Search Businesses" />
-            </form>
-            <form>
-              <input id="whereBox" type="location" placeholder="Where?" />
-            </form>
+            <input id="searchBox" type="business" placeholder="Search Businesses" />
+            <input id="whereBox" type="location" placeholder="Where?" />
           </div>
           <a href="#">
             <button>Let's Go</button>
