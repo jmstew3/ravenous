@@ -11,17 +11,27 @@ function App() {
         </div>
         <div className="sortContainer">
           <div className="sortItems">
-            <div>Best<br/> Match</div>
-            <div>Highest<br/> Rated</div>
-            <div>Most<br/> Reviewed</div>
+            <div>
+              <a href="#">Best<br/> Match</a>
+            </div>
+            <div>
+              <a href="#">Highest<br/> Rated</a>
+            </div>
+            <div>
+              <a href="#">Most<br/> Reviewed</a>
+            </div>
           </div>
           <div className="searchItems">
-            <div id="searchBox">Search Businesses</div>
-            <div id="whereBox">Where?</div>
+            <form>
+              <input id="searchBox" type="business" placeholder="Search Businesses" />
+            </form>
+            <form>
+              <input id="whereBox" type="location" placeholder="Where?" />
+            </form>
           </div>
-          <button>
-            Let's Go
-          </button>
+          <a href="#">
+            <button>Let's Go</button>
+          </a>
         </div>
       </header>
       <BusinessList />

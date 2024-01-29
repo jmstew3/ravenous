@@ -7,6 +7,12 @@ body {
   font-size: 16px;
 }
 
+:root {
+  --color-primary: rgb(212, 168, 57);
+  --color-primary-hover: rgb(166, 129, 38);
+  --color-primary-link-hover: rgb(255, 200, 59);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -22,13 +28,15 @@ header {
 #heroBanner {
   display: flex;
   justify-content: center;
-  align-items: start;
-  background-color: rgb(179, 129, 3);
+  align-items: center;
+  background-color: var(--color-primary);
   width: 100%;
+  height: 50px;
+  padding: 5px;
 }
 
 #heroBanner h1 {
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   color: white;
 }
 
@@ -62,6 +70,15 @@ header {
   width: 150px;
 }
 
+.sortItems a {
+  color: white;
+  text-decoration: none;
+}
+
+.sortItems a:hover {
+  color: var(--color-primary-link-hover);
+}
+
 .searchItems {
   display: flex;
   justify-content: space-evenly;
@@ -82,20 +99,31 @@ header {
   padding: 5px 0 5px 15px;
   border-radius: 5px;
   font-size: 1.1rem;
-  color: rgb(148, 148, 148);
+  color: black;
   font-weight: 600;
+  border: none;
+}
+
+#searchBox::placeholder,
+#whereBox::placeholder {
+  color: rgb(148, 148, 148);
 }
 
 button {
+  cursor: pointer;
   height: 50px;
   width: 135px;
   border-radius: 5px;
-  background-color: rgb(186, 165, 70);
+  background-color: var(--color-primary);
   box-shadow: none;
   border: none;
   font-size: 1.1rem;
   font-weight: 700;
   color: white;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
 }
 
 .biz-box-container {
@@ -149,12 +177,12 @@ button {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 1rem;
-  color: rgb(179, 129, 3);
+  color: var(--color-primary);
 }
 
 .content-right .highlight-small {
   font-weight: 800;
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: rgb(179, 129, 3);
+  color: var(--color-primary);
 }
