@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import BusinessList from './BusinessList.js'
+import SearchBar from './SearchBar';
 
 function App() {
   return (
@@ -21,10 +22,7 @@ function App() {
               <a href="#">Most<br/> Reviewed</a>
             </div>
           </div>
-          <div className="searchItems">
-            <input id="searchBox" type="business" placeholder="Search Businesses" />
-            <input id="whereBox" type="location" placeholder="Where?" />
-          </div>
+          <SearchBar />
           <a href="#">
             <button>Let's Go</button>
           </a>
