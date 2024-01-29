@@ -4,7 +4,12 @@ import BusinessList from './BusinessList.js'
 
 function App() {
   return (
-    <BusinessList />
+    <body>
+      <header>
+        <h1>Page Title</h1>
+      </header>
+      <BusinessList />
+    </body>
   );
 }
 
