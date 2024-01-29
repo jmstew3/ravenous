@@ -9,12 +9,27 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.4rem;
   height: 600px;
   background-image: url("./images/ravenous-background-image.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+#heroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(179, 129, 3);
+  width: 100%;
+}
+
+#heroBanner h1 {
+  font-size: 1.4rem;
+  color: white;
 }
 
 .sortContainer {
@@ -23,6 +38,7 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 900px;
+  height: 100%;
 }
 
 .sortItems {
@@ -66,13 +82,13 @@ header {
   padding: 5px 0 5px 15px;
   border-radius: 5px;
   font-size: 1.1rem;
-  color: rgb(131, 131, 131);
+  color: rgb(148, 148, 148);
   font-weight: 600;
 }
 
 button {
-  height: 40px;
-  width: 120px;
+  height: 50px;
+  width: 135px;
   border-radius: 5px;
   background-color: rgb(186, 165, 70);
   box-shadow: none;

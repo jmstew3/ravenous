@@ -6,6 +6,9 @@ function App() {
   return (
     <body>
       <header>
+        <div id="heroBanner">
+          <h1>ravenous</h1>
+        </div>
         <div className="sortContainer">
           <div className="sortItems">
             <div>Best<br/> Match</div>
