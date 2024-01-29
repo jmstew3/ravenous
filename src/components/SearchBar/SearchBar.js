@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './SearchBar.css';
+import styles from './SearchBar.module.css';
 
 function SearchBar() {
     const searchBar = (
         <header>
-        <div className="sortContainer">
-          <div className="sortItems">
+        <div className={styles.sortContainer}>
+          <div className={styles.sortItems}>
             <div>
               <a href="#">Best<br/> Match</a>
             </div>
@@ -16,9 +16,9 @@ function SearchBar() {
               <a href="#">Most<br/> Reviewed</a>
             </div>
           </div>
-          <div className="searchItems">
-            <input id="searchBox" type="business" placeholder="Search Businesses" />
-            <input id="whereBox" type="location" placeholder="Where?" />
+          <div className={styles.searchItems}>
+            <input className={styles.searchBox} type="text" placeholder="Search Businesses" />
+            <input className={styles.whereBox} type="text" placeholder="Where?" />
         </div>
           <a href="#">
             <button>Let's Go</button>

@@ -63,8 +63,8 @@
     margin-bottom: 25px;
   }
   
-  .searchItems #searchBox,
-  .searchItems #whereBox {
+  .searchItems .searchBox,
+  .searchItems .whereBox {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -80,8 +80,8 @@
     border: none;
   }
   
-  #searchBox::placeholder,
-  #whereBox::placeholder {
+  .searchBox::placeholder,
+  .whereBox::placeholder {
     color: rgb(148, 148, 148);
   }
   
