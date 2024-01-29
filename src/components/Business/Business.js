@@ -86,7 +86,7 @@ function Business() {
                             <p>{business.state} {business.zipCode}</p>
                         </div>
                         <div className={styles.contentRight}>
-                            <p className={styles.highlight}>{business.category}</p>
+                            <p className={styles.highlight}>{business.category.toUpperCase()}</p>
                             <p className={styles.highlightSmall}>{business.rating} stars</p>
                             <p>{business.reviewCount} reviews</p>
                         </div>
