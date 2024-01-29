@@ -1,7 +1,6 @@
 import React from 'react';
+import './Business.css';
 import Business from './Business';
-
-
 
 function BusinessList() {
     return (

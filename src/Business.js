@@ -1,4 +1,5 @@
 import React from 'react';
+import './Business.css';
 
 const business = [
     {
@@ -68,7 +69,6 @@ const business = [
         reviewCount: 90
     }
 ]
-
 
 function Business() {
     const businesses = business.map((business, index) =>

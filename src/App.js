@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import BusinessList from './BusinessList.js'
+import BusinessList from './BusinessList.js';
 import SearchBar from './SearchBar';
 
 function App() {
