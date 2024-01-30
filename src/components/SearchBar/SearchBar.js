@@ -17,13 +17,13 @@ const SearchBar = () => {
 
   return (
     <header>
-        <div className={styles.sortContainer}>
+        <div className={styles.SortContainer}>
           <div className={styles.SortItems}>
             <ul>{renderSortByOptions()}</ul>
           </div>
-          <div className={styles.searchItems}>
-            <input className={styles.searchBox} type="text" placeholder="Search Businesses" />
-            <input className={styles.whereBox} type="text" placeholder="Where?" />
+          <div className={styles.SearchItems}>
+            <input className={styles.SearchBox} type="text" placeholder="Search Businesses" />
+            <input className={styles.WhereBox} type="text" placeholder="Where?" />
         </div>
           <a href="#">
             <button>Let's Go</button>
