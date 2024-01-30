@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../ravenous-part-one-solution"
 		}
 	],
 	"settings": {}
