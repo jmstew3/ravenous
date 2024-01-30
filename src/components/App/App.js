@@ -1,5 +1,5 @@
 import './App.css';
-import BusinessList from '../BusinessList/BusinessList.js';
+import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
