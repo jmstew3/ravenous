@@ -1,50 +1,49 @@
-
-  .boxItem {
-    display: flex;
-    flex-direction: column;
-    max-width: calc(33.33% - 80px);
-  }
-  
-  .boxItem h1 {
-    font-size: 1.2rem;
-    font-weight: 800;
-  }
-  
-  .boxItem p {
-    font-size: 0.8rem;
-  }
-  
-  .contentBox{
-    padding: 5px 0;
-    margin-bottom: 15px;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-  }
-  
-  .content p {
-    margin: 2px 0;
-  }
-  
-  .content .contentLeft {
-    text-align: start;
-  }
-  
-  .content .contentRight {
-    text-align: end;
-  }
-  
-  .contentRight .highlight {
-    font-weight: 800;
-    font-size: 1rem;
-    color: var(--color-primary);
-  }
-  
-  .contentRight .highlightSmall {
-    font-weight: 800;
-    font-size: 0.8rem;
-    color: var(--color-primary);
-  }
+  .BoxItem {
+      display: flex;
+      flex-direction: column;
+      max-width: calc(33.33% - 80px);
+    }
+    
+    .BoxItem h1 {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    
+    .BoxItem p {
+      font-size: 0.8rem;
+    }
+    
+    .ContentBox{
+      padding: 5px 0;
+      margin-bottom: 15px;
+    }
+    
+    .Content {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+    
+    .Content p {
+      margin: 2px 0;
+    }
+    
+    .Content .ContentLeft {
+      text-align: start;
+    }
+    
+    .Content .ContentRight {
+      text-align: end;
+    }
+    
+    .ContentRight .Highlight {
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--color-primary);
+    }
+    
+    .ContentRight .HighlightSmall {
+      font-weight: 800;
+      font-size: 0.8rem;
+      color: var(--color-primary);
+    }

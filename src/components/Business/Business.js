@@ -73,21 +73,21 @@ const business = [
 function Business() {
     const businesses = business.map((business, index) =>
         (
-            <div key={index} className={styles.boxItem}>
+            <div key={index} className={styles.BoxItem}>
                 <img src={business.imageSrc}/>
-                <div className={styles.contentBox}>
-                    <div className={styles.headline}>   
+                <div className={styles.ContentBox}>
+                    <div className={styles.Headline}>   
                         <h1>{business.name}</h1>
                     </div> 
-                    <div className={styles.content}>
-                        <div className={styles.contentLeft}>
+                    <div className={styles.Content}>
+                        <div className={styles.ContentLeft}>
                             <p>{business.address}</p>
                             <p>{business.city}</p>
                             <p>{business.state} {business.zipCode}</p>
                         </div>
-                        <div className={styles.contentRight}>
-                            <p className={styles.highlight}>{business.category.toUpperCase()}</p>
-                            <p className={styles.highlightSmall}>{business.rating} stars</p>
+                        <div className={styles.ContentRight}>
+                            <p className={styles.Highlight}>{business.category.toUpperCase()}</p>
+                            <p className={styles.HighlightSmall}>{business.rating} stars</p>
                             <p>{business.reviewCount} reviews</p>
                         </div>
                     </div>
