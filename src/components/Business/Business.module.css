@@ -13,9 +13,13 @@
       font-size: 0.8rem;
     }
     
-    .ContentBox{
+    .ContentBox {
       padding: 5px 0;
       margin-bottom: 15px;
+    }
+
+    .ContentBox .Headline {
+      font-size: 1.3rem;
     }
     
     .Content {
