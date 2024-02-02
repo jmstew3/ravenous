@@ -1,4 +1,4 @@
-  header {
+    header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -24,14 +24,13 @@
       justify-content: center;
       align-items: center;
     }
-    
+
     .SortItems ul {
       display: flex;
       justify-content: space-between;
       cursor: pointer;
       text-align: center;
       width: 600px;
-      /* height: 30px; */
       margin-bottom: 25px;
       font-size: 1.1rem;
       color: white;
@@ -42,6 +41,12 @@
       padding: 0;
     }
 
+    .SortItems a {
+      color: white;
+      text-decoration: none;
+    }
+
+
     .SortItems li {
       text-align: center;
       width: 90px;
@@ -50,7 +55,19 @@
       margin-bottom: 15px;
     }
 
-    .SortItems li:hover {
+    .SortItems a:hover {.SortItems a {
+  color: inherit; /* Reset color */
+  text-decoration: none; /* Remove underline */
+  cursor: auto; /* Reset cursor */
+  background-color: transparent; /* Reset background */
+  text-align: left; /* Reset text alignment */
+  display: inline; /* Reset display */
+  font-size: medium; /* Reset font size */
+  font-weight: normal; /* Reset font weight */
+  line-height: normal; /* Reset line height */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+}
       color: var(--color-primary-link-hover);
       transition: var(--default-transition);
     }
