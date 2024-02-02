@@ -1,6 +1,26 @@
-.BusinessList {
+/* .BusinessList {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 50px 300px;
-  }
+  } */
+
+.Center {
+  display: flex;
+  justify-content: center;
+}
+
+ul.BoxItem {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 75px 0;  
+  width: 80%;
+}
+
+ul.BoxItem li {
+  display: flex;
+  max-width: calc(33.33% - 50px);
+  margin: 25px 0;
+}

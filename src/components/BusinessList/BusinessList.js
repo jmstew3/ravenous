@@ -1,16 +1,18 @@
 import React from 'react';
-import styles from './BusinessList.module.css';
 import Business from '../Business/Business';
+import styles from './BusinessList.module.css';
 
 function BusinessList(props) {
   return (
-    <ul>
-        {props.businesses.map((business,index) => (
-          <li key={index}>
-            <Business businessCard={business}/>
-          </li>
-        ))}
-    </ul>
+    <div className={styles.Center}>
+      <ul className={styles.BoxItem}>
+          {props.businesses.map((business,index) => (
+            <li key={index}>
+              <Business businessCard={business}/>
+            </li>
+          ))}
+      </ul>
+    </div>
   );
 }
 
