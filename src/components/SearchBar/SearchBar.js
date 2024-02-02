@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './SearchBar.module.css';
 
 const sortByOptions = {
@@ -12,7 +11,7 @@ const SearchBar = () => {
   const renderSortByOptions = () => {
     return Object.keys(sortByOptions).map((sortByOption) => {
       let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue}>{sortByOption}</li>;
+      return <li key={sortByOptionValue}><a href={`/${sortByOptionValue}`}>{sortByOption}</a></li>;
     });
   };
 
