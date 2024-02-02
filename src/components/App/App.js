@@ -25,7 +25,7 @@ function App() {
           <h1>ravenous</h1>
         </div>
       <SearchBar />
-      <BusinessList />
+      <BusinessList businesses={businesses}/>
     </div>
   );
 }
