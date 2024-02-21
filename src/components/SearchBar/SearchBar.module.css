@@ -36,7 +36,6 @@
       color: white;
       font-weight: 700;
       line-height: 1;
-      border-bottom: 1px solid white;
       list-style: none;
       padding: 0;
     }
@@ -45,33 +44,22 @@
       color: white;
       text-decoration: none;
     }
-
-
-    .SortItems li {
-      text-align: center;
-      width: 90px;
-      line-height: 1.2;
-      list-style: none;
-      margin-bottom: 15px;
-    }
-
-    .SortItems a:hover {.SortItems a {
-  color: inherit; /* Reset color */
-  text-decoration: none; /* Remove underline */
-  cursor: auto; /* Reset cursor */
-  background-color: transparent; /* Reset background */
-  text-align: left; /* Reset text alignment */
-  display: inline; /* Reset display */
-  font-size: medium; /* Reset font size */
-  font-weight: normal; /* Reset font weight */
-  line-height: normal; /* Reset line height */
-  padding: 0; /* Reset padding */
-  margin: 0; /* Reset margin */
-}
-      color: var(--color-primary-link-hover);
+    .SortItems li.active,
+    .SortItems li.active:hover {
       transition: var(--default-transition);
+      color: var(--color-primary-link-hover);
+      border-bottom: 1px solid var(--color-primary-link-hover);
     }
     
+    .SortItems li {
+      text-align: center;
+      width: 100%;
+      line-height: 1.2;
+      list-style: none;
+      padding: 0px 60px 10px 60px;
+      border-bottom: 1px solid white;
+    }
+
     .SearchItems {
       display: flex;
       justify-content: space-evenly;

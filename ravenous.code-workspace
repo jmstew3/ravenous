@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../ravenous-part-one-solution"
+		},
+		{
+			"path": "../../GitHub/ravenous-part-two-solution"
+		},
+		{
+			"path": "../ravenous-part-three-solution"
 		}
 	],
 	"settings": {}
