@@ -41,6 +41,7 @@ const SearchBar = ({searchYelp}) => {
 
   const handleSearch = (event) => {
     event.preventDefault();
+    /* Will replace with Yelp API */
     console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
   };
 
