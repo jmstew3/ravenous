@@ -31,6 +31,17 @@ const SearchBar = () => {
     setSortBy(sortByValue);
   };
 
+  const handleLocationChange = ({target}) => {
+    setLocation(target.value);
+  };
+
+  const handleSearch= ({target}) => {
+    setTerm(target.value);
+  };
+
+  const handleButtonClick = () => {
+    console.log('Searching Yelp Test');
+  };
 
   const renderSortByOptions = () => {
     return Object.keys(sortByOptions).map(sortByKey => {
@@ -54,11 +65,11 @@ const SearchBar = () => {
             <ul>{renderSortByOptions()}</ul>
           </div>
           <div className={styles.SearchItems}>
-            <input className={styles.SearchBox} placeholder="Search Businesses" />
-            <input className={styles.WhereBox} placeholder="Where?" />
+            <input className={styles.SearchBox} placeholder="Search Businesses" value={term} onChange={handleSearch} />
+            <input className={styles.WhereBox} placeholder="Where?" value={location} onChange={handleLocationChange} />
         </div>
           <a href="#">
-            <button>Let's Go</button>
+            <button type="submit">Let's Go</button>
           </a>
         </div>
     </header>
