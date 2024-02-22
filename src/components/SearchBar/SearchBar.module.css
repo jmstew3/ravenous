@@ -92,6 +92,11 @@
   color: rgb(148, 148, 148);
 }
 
+.SearchBarSubmit {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   cursor: pointer;
   height: 50px;
