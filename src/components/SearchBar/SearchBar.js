@@ -41,8 +41,7 @@ const SearchBar = ({searchYelp}) => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    // searchYelp(term, location, sortBy);
-    console.log("Testing This");
+    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
   };
 
   const renderSortByOptions = () => {
