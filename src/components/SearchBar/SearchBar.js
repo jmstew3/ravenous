@@ -5,11 +5,11 @@ import styles from './SearchBar.module.css';
 // handleSortByChange = a click handler that updates the sortBy state based on the sortByValue passed to it
 // sortByOptions = the object that holds the three <li> sort items (Best Match, Highest Rated, Most Reviewed)
 // sortByKey = the key (human-readable label) in the object sortByOptions (i.e. Best Match)
-// sortByValue = the value (computer-readable value) associated with each key in sortByOptions (i.e. best_match)
+// sortByValue (let sortByValue = sortByOptions[sortByKey]) = the value (computer-readable value) associated with each key in sortByOptions (i.e. best_match)
 // renderSortByOptions = creates html attributes for each <li> item based on value names for sortByOptions items
 
 const sortByOptions = {
-  // key:value
+  //key (props)  :   value
   "Best Match":"best_match",
   "Highest Rated":"rating",
   "Most Reviewed":"review_count"
@@ -33,7 +33,7 @@ const SearchBar = () => {
 
 
   const renderSortByOptions = () => {
-    return Object.keys(sortByOptions).map((sortByKey) => {
+    return Object.keys(sortByOptions).map(sortByKey => {
       let sortByValue = sortByOptions[sortByKey];
       return (
         <li
