@@ -27,19 +27,19 @@ const SearchBar = () => {
     return "";
   };
 
-  const handleSortByChange = (sortByValue) => {
-    setSortBy(sortByValue);
+  const handleTermChange = ({target}) => {
+    setTerm(target.value);
   };
 
   const handleLocationChange = ({target}) => {
     setLocation(target.value);
   };
 
-  const handleSearch= ({target}) => {
-    setTerm(target.value);
+  const handleSortByChange = (sortByValue) => {
+    setSortBy(sortByValue);
   };
 
-  const handleButtonClick = () => {
+  const handleSearch = () => {
     console.log('Searching Yelp Test');
   };
 
@@ -59,20 +59,22 @@ const SearchBar = () => {
   };
 
   return (
-    <header>
+    <div className={styles.SearchBar}>
         <div className={styles.SortContainer}>
           <div className={styles.SortItems}>
             <ul>{renderSortByOptions()}</ul>
           </div>
-          <div className={styles.SearchItems}>
-            <input className={styles.SearchBox} placeholder="Search Businesses" value={term} onChange={handleSearch} />
-            <input className={styles.WhereBox} placeholder="Where?" value={location} onChange={handleLocationChange} />
+          <form onSubmit={handleSearch}>
+            <div className={styles.SearchItems}>
+              <input className={styles.SearchBox} placeholder="Search Businesses" value={term} onChange={handleTermChange} />
+              <input className={styles.WhereBox} placeholder="Where?" value={location} onChange={handleLocationChange} />
+            </div>
+            <div className={styles.SearchBarSubmit}>
+              <button type="submit">Let's Go</button>
+            </div>
+          </form>
         </div>
-          <a href="#">
-            <button type="submit">Let's Go</button>
-          </a>
-        </div>
-    </header>
+    </div>
   );
 };
 

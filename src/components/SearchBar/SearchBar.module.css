@@ -1,115 +1,115 @@
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 1.4rem;
-      height: 600px;
-      background-image: url("./ravenous-background-image.jpg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-    
-    .SortContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 900px;
-      height: 100%;
-    }
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  height: 600px;
+  background-image: url("./ravenous-background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-    .SortItems {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.SortContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  height: 100%;
+}
 
-    .SortItems ul {
-      display: flex;
-      justify-content: space-between;
-      cursor: pointer;
-      text-align: center;
-      width: 600px;
-      margin-bottom: 25px;
-      font-size: 1.1rem;
-      color: white;
-      font-weight: 700;
-      line-height: 1;
-      list-style: none;
-      padding: 0;
-    }
+.SortItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .SortItems a {
-      color: white;
-      text-decoration: none;
-    }
+.SortItems ul {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: center;
+  width: 600px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+  list-style: none;
+  padding: 0;
+}
 
-       
-    .SortItems li {
-      text-align: center;
-      width: 100%;
-      line-height: 1.2;
-      list-style: none;
-      padding: 0px 60px 10px 60px;
-      border-bottom: 1px solid white;
-    }
+.SortItems a {
+  color: white;
+  text-decoration: none;
+}
 
-    .SortItems li.active,
-    .SortItems li.active:hover {
-      transition: var(--default-transition);
-      color: var(--color-primary-link-hover);
-      border-bottom: 1px solid var(--color-primary-link-hover);
-    }
+   
+.SortItems li {
+  text-align: center;
+  width: 100%;
+  line-height: 1.2;
+  list-style: none;
+  padding: 0px 60px 10px 60px;
+  border-bottom: 1px solid white;
+}
 
-    .SearchItems {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-    
-    .SearchItems .SearchBox,
-    .SearchItems .WhereBox {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      background-color: white;
-      width: 400px;
-      height: 45px;
-      margin: 5px 25px;
-      padding: 5px 0 5px 15px;
-      border-radius: 5px;
-      font-size: 1.1rem;
-      color: black;
-      font-weight: 600;
-      border: none;
-    }
-    
-    .SearchBox::placeholder,
-    .WhereBox::placeholder {
-      color: rgb(148, 148, 148);
-    }
-    
-    button {
-      cursor: pointer;
-      height: 50px;
-      width: 135px;
-      border-radius: 5px;
-      background-color: var(--color-primary);
-      box-shadow: none;
-      border: none;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: white;
-    }
-    
-    button:hover {
-      background-color: var(--color-primary-hover);
-    }
-    
-    button,
-    button:hover {
-      transition: var(--default-transition);
-    }
+.SortItems li.active,
+.SortItems li.active:hover {
+  transition: var(--default-transition);
+  color: var(--color-primary-link-hover);
+  border-bottom: 1px solid var(--color-primary-link-hover);
+}
+
+.SearchItems {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.SearchItems .SearchBox,
+.SearchItems .WhereBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  height: 45px;
+  margin: 5px 25px;
+  padding: 5px 0 5px 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 600;
+  border: none;
+}
+
+.SearchBox::placeholder,
+.WhereBox::placeholder {
+  color: rgb(148, 148, 148);
+}
+
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 135px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  box-shadow: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button,
+button:hover {
+  transition: var(--default-transition);
+}
