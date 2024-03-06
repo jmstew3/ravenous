@@ -4,7 +4,7 @@ import styles from './Business.module.css';
 const Business = ({ business }) => {
     return (
         <div className={styles.BoxItem}>
-        <img src={business.imageSrc}/>
+        <img src={business.imageSrc} alt="" />
         <div className={styles.ContentBox}>
             <div className={styles.Headline}>   
                 <h1>{business.name}</h1>

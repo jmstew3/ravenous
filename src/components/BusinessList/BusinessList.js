@@ -3,13 +3,13 @@ import styles from './BusinessList.module.css';
 
 import Business from '../Business/Business';
 
-function BusinessList(props) {
+const BusinessList = ({ businesses }) => {
   return (
     <div className={styles.Center}>
       <ul className={styles.BoxItem}>
-          {props.businesses.map((business,index) => (
+          {businesses.map((business,index) => (
             <li key={index}>
-              <Business business={business}/>
+              <Business business={business} key={business.name}/>
             </li>
           ))}
       </ul>
