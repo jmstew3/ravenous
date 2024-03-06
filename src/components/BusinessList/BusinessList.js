@@ -1,6 +1,7 @@
 import React from 'react';
-import Business from '../Business/Business';
 import styles from './BusinessList.module.css';
+
+import Business from '../Business/Business';
 
 function BusinessList(props) {
   return (
@@ -8,7 +9,7 @@ function BusinessList(props) {
       <ul className={styles.BoxItem}>
           {props.businesses.map((business,index) => (
             <li key={index}>
-              <Business businessCard={business}/>
+              <Business business={business}/>
             </li>
           ))}
       </ul>
