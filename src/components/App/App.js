@@ -6,7 +6,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import Yelp from '../../utils/Yelp';
   
 const App = () => {
-  const [businesses, setBusiness] = useState([]);
+  const [businesses, setBusinesses] = useState([]);
 
   const searchYelp = async (term, location, sortBy) => {
     const businesses = await Yelp.search(term, location, sortBy);
